@@ -314,7 +314,6 @@ func variableMutator(mctx BottomUpMutatorContext) {
 	valStruct := reflect.ValueOf(mctx.Config().productVariables)
 
 	doVariableMutation(mctx, a, variableValues, zeroValues, valStruct)
-
 }
 
 func doVariableMutation(mctx BottomUpMutatorContext, a *ModuleBase, variableValues reflect.Value, zeroValues reflect.Value,
